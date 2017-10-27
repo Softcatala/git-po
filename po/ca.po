@@ -39,7 +39,7 @@
 #   cherry pick      |  «cherry pick»
 #   rebase           |  «rebase»
 #   stage            |  «stage»
-#   stash            |  «sta»
+#   stash            |  «stash»
 #   squash           |  «squash»
 #   trailer          |  «trailer»
 #   unstage          |  «unstage»
