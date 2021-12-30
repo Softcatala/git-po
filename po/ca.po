@@ -4472,7 +4472,7 @@ msgstr ""
 #, fuzzy
 msgid ""
 "either user.signingkey or gpg.ssh.defaultKeyCommand needs to be configured"
-msgstr "usuari.signingkey o gpg.ssh.defaultKeyCommand ha de ser configurat"
+msgstr "user.signingkey o gpg.ssh.defaultKeyCommand ha de ser configurat"
 
 #: gpg-interface.c:778
 #, c-format
