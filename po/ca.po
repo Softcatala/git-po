@@ -4475,49 +4475,46 @@ msgid ""
 msgstr "usuari.signingkey o gpg.ssh.defaultKeyCommand ha de ser configurat"
 
 #: gpg-interface.c:778
-#, c-format, fuzzy
+#, c-format
 msgid "gpg.ssh.defaultKeycommand succeeded but returned no keys: %s %s"
 msgstr ""
-"gpg.ssh.defaultKeycommand ha tingut èxit però no ha retornat cap clau: "
-"percentatge"
+"gpg.ssh.defaultKeycommand ha tingut èxit però no ha retornat cap clau: %s %s"
 
 #: gpg-interface.c:784
-#, c-format, fuzzy
+#, c-format
 msgid "gpg.ssh.defaultKeyCommand failed: %s %s"
-msgstr "gpg.ssh.defaultKeyCommand ha fallat: percentatge"
+msgstr "gpg.ssh.defaultKeyCommand ha fallat: %s %s"
 
 #: gpg-interface.c:872
 msgid "gpg failed to sign the data"
 msgstr "gpg ha fallat en signar les dades"
 
 #: gpg-interface.c:893
-#, fuzzy
 msgid "user.signingkey needs to be set for ssh signing"
 msgstr "usuari.signingkey s'ha d'establir per signar ssh"
 
 #: gpg-interface.c:904
-#, fuzzy, c-format
+#, c-format
 msgid "failed writing ssh signing key to '%s'"
-msgstr "s'ha produït un error en escriure la signatura separada a «%s»"
+msgstr "s'ha produït un error en escriure la signatura ssh a «%s»"
 
 #: gpg-interface.c:922
 #, fuzzy, c-format
 msgid "failed writing ssh signing key buffer to '%s'"
-msgstr "s'ha produït un error en escriure la signatura separada a «%s»"
+msgstr "s'ha produït un error en escriure la signatura ssh a «%s»"
 
 #: gpg-interface.c:940
-#, fuzzy
 msgid ""
 "ssh-keygen -Y sign is needed for ssh signing (available in openssh version "
 "8.2p1+)"
 msgstr ""
-"ssh-keygen el signe -Y és necessari per signar ssh (disponible a opensh "
+"ssh-keygen el signe -Y és necessari per signar ssh (disponible a openssh "
 "versió 8.2p1+)"
 
 #: gpg-interface.c:952
-#, fuzzy, c-format
+#, c-format
 msgid "failed reading ssh signing data buffer from '%s'"
-msgstr "s'ha produït un error en escriure la signatura separada a «%s»"
+msgstr "s'ha produït un error en llegir la signatura ssh des de «%s»"
 
 #: graph.c:98
 #, c-format
@@ -4664,7 +4661,7 @@ msgid "Continuing under the assumption that you meant '%s'."
 msgstr "El procés continuarà, pressuposant que volíeu dir «%s»."
 
 #: help.c:646
-#, c-format, fuzzy
+#, c-format
 msgid "Run '%s' instead? (y/N)"
 msgstr "Voleu executar «%s»? (s/N)"
 
@@ -4884,9 +4881,9 @@ msgid "invalid value '%s' for lsrefs.unborn"
 msgstr "valor «%s» no vàlid per a «lsrefs.unborn»"
 
 #: ls-refs.c:174
-#, fuzzy, c-format
+#, c-format
 msgid "unexpected line: '%s'"
-msgstr "wanted-ref inesperat: «%s»"
+msgstr "línia inesperada: «%s»"
 
 #: ls-refs.c:178
 msgid "expected flush after ls-refs arguments"
@@ -5144,7 +5141,7 @@ msgstr ""
 "versió %s de %s s'ha deixat en l'arbre."
 
 #: merge-ort.c:4152
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "Note: %s not up to date and in way of checking out conflicted version; old "
 "copy renamed to %s"
@@ -5558,14 +5555,14 @@ msgid "cannot store reverse index file"
 msgstr "no es pot emmagatzemar el fitxer d'índex invers"
 
 #: midx.c:990
-#, fuzzy, c-format
+#, c-format
 msgid "could not parse line: %s"
-msgstr "no s'ha pogut analitzar %s"
+msgstr "no s'ha pogut analitzar la línia: %s"
 
 #: midx.c:992
-#, fuzzy, c-format
+#, c-format
 msgid "malformed line: %s"
-msgstr "línia d'entrada mal formada: «%s»."
+msgstr "línia mal formada: «%s»."
 
 #: midx.c:1159
 msgid "ignoring existing multi-pack-index; checksum mismatch"
@@ -5574,12 +5571,11 @@ msgstr ""
 "coincideix"
 
 #: midx.c:1184
-#, fuzzy
 msgid "could not load pack"
-msgstr "no s'ha pogut finalitzar «%s»"
+msgstr "no s'ha pogut carregar el paquet"
 
 #: midx.c:1190
-#, fuzzy, c-format
+#, c-format
 msgid "could not open index for %s"
 msgstr "s'ha produït un error en obrir l'índex per «%s»"
 
@@ -5593,9 +5589,9 @@ msgid "unknown preferred pack: '%s'"
 msgstr "paquet preferit desconegut: «%s»"
 
 #: midx.c:1289
-#, fuzzy, c-format
+#, c-format
 msgid "cannot select preferred pack %s with no objects"
-msgstr "no es poden suprimir paquets en un repositori d'objectes preciosos"
+msgstr "no es pot selecionar un paquet preferit %s sense objectes"
 
 #: midx.c:1321
 #, c-format
@@ -5612,14 +5608,12 @@ msgid "no pack files to index."
 msgstr "no hi ha fitxers empaquetats a indexar."
 
 #: midx.c:1417
-#, fuzzy
 msgid "could not write multi-pack bitmap"
-msgstr "no s'ha pogut escriure la plantilla de comissió"
+msgstr "no s'han pogut escriure els mapes de bits dels multipaquets"
 
 #: midx.c:1427
-#, fuzzy
 msgid "could not write multi-pack-index"
-msgstr "no s'han pogut netejar els percentatges multi-paquet"
+msgstr "no s'ha pogut escriure l'índex multipaquet"
 
 #: midx.c:1486 builtin/clean.c:37
 #, c-format
@@ -5869,9 +5863,9 @@ msgid "unable to unpack %s header"
 msgstr "no s'ha pogut desempaquetar la capçalera %s"
 
 #: object-file.c:1434
-#, c-format, fuzzy
+#, c-format
 msgid "header for %s too long, exceeds %d bytes"
-msgstr "la capçalera per a percentatges és massa llarga, supera els bytes"
+msgstr "la capçalera per a %s és massa llarga, supera els %d bytes"
 
 #: object-file.c:1664
 #, c-format
@@ -6145,14 +6139,12 @@ msgid "hash mismatch %s"
 msgstr "el resum no coincideix %s"
 
 #: pack-bitmap.c:348
-#, fuzzy
 msgid "multi-pack bitmap is missing required reverse index"
-msgstr "falta un fragment necessari dels desplaçaments al multi-pack-index"
+msgstr "falta l'índex invers necessari al mapa de bits multipaquet"
 
 #: pack-bitmap.c:424
-#, fuzzy
 msgid "load_reverse_index: could not open pack"
-msgstr "Loadreverseindex: no s'ha pogut obrir el paquet"
+msgstr "load_reverse_index: no s'ha pogut obrir el paquet"
 
 #: pack-bitmap.c:1064 pack-bitmap.c:1070 builtin/pack-objects.c:2424
 #, c-format
@@ -6160,9 +6152,9 @@ msgid "unable to get size of %s"
 msgstr "no s'ha pogut obtenir la mida de %s"
 
 #: pack-bitmap.c:1916
-#, fuzzy, c-format
+#, c-format
 msgid "could not find %s in pack %s at offset %<PRIuMAX>"
-msgstr "no s'ha pogut finalitzar «%s»"
+msgstr "no s'ha pogut trobar %s com al desplaçament %<PRIuMAX>"
 
 #: pack-bitmap.c:1952 builtin/rev-list.c:92
 #, c-format
@@ -6349,9 +6341,9 @@ msgstr "   o: %s"
 #. translated) N_() usage string, which contained embedded
 #. newlines before we split it up.
 #: parse-options.c:969
-#, c-format, fuzzy
+#, c-format
 msgid "%*s%s"
-msgstr "%*s%"
+msgstr "%*s%s"
 
 #: parse-options.c:992
 #, c-format
@@ -6934,9 +6926,9 @@ msgstr ""
 "Els comportaments possibles són: ignore, warn, error.\n"
 
 #: rebase.c:29
-#, c-format, fuzzy
+#, c-format
 msgid "%s: 'preserve' superseded by 'merges'"
-msgstr "percentatges: \"preservei\" substituït per \"merges\""
+msgstr "%s: «conserva» substituït per «fusiona»"
 
 #: ref-filter.c:42 wt-status.c:2036
 msgid "gone"
@@ -7028,9 +7020,9 @@ msgid "unrecognized %%(contents) argument: %s"
 msgstr "argument %%(contents) no reconegut: %s"
 
 #: ref-filter.c:443
-#, fuzzy, c-format
+#, c-format
 msgid "unrecognized %%(raw) argument: %s"
-msgstr "argument %%(%s) desconegut: %s"
+msgstr "argument %%(raw) desconegut: %s"
 
 #: ref-filter.c:458
 #, c-format
@@ -7078,9 +7070,9 @@ msgid "unrecognized %%(if) argument: %s"
 msgstr "argument %%(if) no reconegut: %s"
 
 #: ref-filter.c:568
-#, fuzzy, c-format
+#, c-format
 msgid "%%(rest) does not take arguments"
-msgstr "%%(body) no accepta arguments"
+msgstr "%%(rest) no accepta arguments"
 
 #: ref-filter.c:680
 #, c-format
@@ -7146,14 +7138,14 @@ msgid "malformed format string %s"
 msgstr "cadena de format mal format %s"
 
 #: ref-filter.c:1033
-#, c-format, fuzzy
+#, c-format
 msgid "this command reject atom %%(%.*s)"
-msgstr "aquesta ordre rebutja l'àtom%(%.*s)"
+msgstr "aquesta ordre rebutja l'àtom %%(%.*s)"
 
 #: ref-filter.c:1040
-#, fuzzy, c-format
+#, c-format
 msgid "--format=%.*s cannot be used with--python, --shell, --tcl"
-msgstr "--object-format no es pot usar sense --stdin"
+msgstr "--format=%.*s no es pot usar amb with--python, --shell, --tcl"
 
 #: ref-filter.c:1706
 #, c-format
@@ -7721,18 +7713,16 @@ msgid "failed to find tree of %s"
 msgstr "s'ha produït un error en cercar l'arbre de %s"
 
 #: revision.c:2259
-#, fuzzy
 msgid "--unsorted-input is incompatible with --no-walk"
-msgstr "--dir-diff és incompatible amb --no-index"
+msgstr "--unsorted-input no és compatible amb --no-walk"
 
 #: revision.c:2346
 msgid "--unpacked=<packfile> no longer supported"
 msgstr "--unpacked=<packfile> ja no s'admet"
 
 #: revision.c:2655 revision.c:2659
-#, fuzzy
 msgid "--no-walk is incompatible with --unsorted-input"
-msgstr "--dir-diff és incompatible amb --no-index"
+msgstr "--no-walk no és compatible amb --unsorted-input"
 
 #: revision.c:2690
 msgid "your current branch appears to be broken"
@@ -7777,7 +7767,6 @@ msgid "send-pack: unable to fork off fetch subprocess"
 msgstr "send-pack: no es pot bifurcar obtenint un subprocés"
 
 #: send-pack.c:457
-#, fuzzy
 msgid "push negotiation failed; proceeding anyway with push"
 msgstr ""
 "ha fallat la negociació de l'empenta; s'està procedint igualment amb "
@@ -8727,12 +8716,11 @@ msgid "can't revert as initial commit"
 msgstr "no es pot revertir com a comissió inicial"
 
 #: sequencer.c:5190 sequencer.c:5419
-#, fuzzy, c-format
+#, c-format
 msgid "skipped previously applied commit %s"
-msgstr "esmena la comissió anterior"
+msgstr "omet les comissions aplicades anteriorment %s"
 
 #: sequencer.c:5260 sequencer.c:5435
-#, fuzzy
 msgid "use --reapply-cherry-picks to include skipped commits"
 msgstr "useu --reapply-cherry-picks per incloure les comissions omeses"
 
@@ -8920,7 +8908,7 @@ msgid "setsid failed"
 msgstr "«setsid» ha fallat"
 
 #: sparse-index.c:273
-#, fuzzy, c-format
+#, c-format
 msgid "index entry is a directory, but not sparse (%08x)"
 msgstr "l'entrada d'índex és un directori, però no dispers (%08x)"
 
@@ -9335,7 +9323,6 @@ msgid "can't connect to subservice %s"
 msgstr "no es pot connectar al subservei %s"
 
 #: transport-helper.c:693 transport.c:404
-#, fuzzy
 msgid "--negotiate-only requires protocol v2"
 msgstr "--negotiate-only requereix el protocol v2"
 
@@ -9344,44 +9331,44 @@ msgid "'option' without a matching 'ok/error' directive"
 msgstr "«option» sense una directiva «ok/error» coincident"
 
 #: transport-helper.c:798
-#, fuzzy, c-format
+#, c-format
 msgid "expected ok/error, helper said '%s'"
-msgstr "s'esperava un ajudant d'error/OK ha dit \"%s\""
+msgstr "s'esperava error/OK, l'ajudant ha dit «%s»"
 
 #: transport-helper.c:859
-#, fuzzy, c-format
+#, c-format
 msgid "helper reported unexpected status of %s"
-msgstr "l'ajudant ha informat d'un estat inesperat dels percentatges"
+msgstr "l'ajudant ha informat d'un estat inesperat de %s"
 
 #: transport-helper.c:942
-#, fuzzy, c-format
+#, c-format
 msgid "helper %s does not support dry-run"
-msgstr "els ajudants no donen suport a l'execució seca"
+msgstr "l'ajudant %s no admet dry-run"
 
 #: transport-helper.c:945
-#, fuzzy, c-format
+#, c-format
 msgid "helper %s does not support --signed"
-msgstr "els ajudants per cents no són compatibles --signed"
+msgstr "l'ajudant %s no admet --signed"
 
 #: transport-helper.c:948
-#, fuzzy, c-format
+#, c-format
 msgid "helper %s does not support --signed=if-asked"
-msgstr "l'ajudant per cents no admet --signed=if-asked"
+msgstr "l'ajudant %s no admet --signed=if-asked"
 
 #: transport-helper.c:953
-#, fuzzy, c-format
+#, c-format
 msgid "helper %s does not support --atomic"
-msgstr "els ajudants no admeten --atomic"
+msgstr "l'ajudant %s no admet --atomic"
 
 #: transport-helper.c:957
-#, fuzzy, c-format
+#, c-format
 msgid "helper %s does not support --%s"
-msgstr "els ajudants per cents no són compatibles --signed"
+msgstr "l'ajudant %s no admet --%s"
 
 #: transport-helper.c:964
-#, fuzzy, c-format
+#, c-format
 msgid "helper %s does not support 'push-option'"
-msgstr "els ajudants no donen suport a «push-option»"
+msgstr "l'ajudant %s no admet «push-option»"
 
 #: transport-helper.c:1064
 #, fuzzy
@@ -9390,9 +9377,9 @@ msgstr ""
 "remot-helper no permet prémer; es necessiten especificacions de referència"
 
 #: transport-helper.c:1069
-#, fuzzy, c-format
+#, c-format
 msgid "helper %s does not support 'force'"
-msgstr "els ajudants no donen suport a «force»"
+msgstr "l'ajudant %s no admet «force»"
 
 #: transport-helper.c:1116
 msgid "couldn't run fast-export"
@@ -9412,14 +9399,14 @@ msgstr ""
 "d'especificar una branca com ara «master»."
 
 #: transport-helper.c:1228
-#, fuzzy, c-format
+#, c-format
 msgid "unsupported object format '%s'"
-msgstr "objecte mal format a «%s»"
+msgstr "format d'objecte no suportat «%s»"
 
 #: transport-helper.c:1237
-#, fuzzy, c-format
+#, c-format
 msgid "malformed response in ref list: %s"
-msgstr "resposta mal formada en la llista de referències"
+msgstr "resposta mal formada al llistat de referències: %s"
 
 #: transport-helper.c:1389
 #, fuzzy, c-format
@@ -9550,9 +9537,8 @@ msgid "Aborting."
 msgstr "S'està avortant."
 
 #: transport.c:1344
-#, fuzzy
 msgid "failed to push all needed submodules"
-msgstr "no s'ha pogut prémer tots els submòduls necessaris"
+msgstr "no s'han pogut pujar tots els submòduls necessaris"
 
 #: tree-walk.c:33
 msgid "too-short tree object"
@@ -9786,13 +9772,13 @@ msgid "Aborting\n"
 msgstr "S'està avortant\n"
 
 #: unpack-trees.c:291
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "After fixing the above paths, you may want to run `git sparse-checkout "
 "reapply`.\n"
 msgstr ""
 "Després de corregir els camins anteriors és possible que vulgueu executar "
-"`git sparse-checkout reapply`."
+"`git sparse-checkout reapply`.\n"
 
 #: unpack-trees.c:352
 msgid "Updating files"
@@ -9811,20 +9797,18 @@ msgstr ""
 "treball"
 
 #: unpack-trees.c:1620
-#, fuzzy
 msgid "Updating index flags"
-msgstr "Actualitzant els indicadors d’índex"
+msgstr "Actualitzant els indicadors d'índex"
 
 #: unpack-trees.c:2772
-#, fuzzy, c-format
+#, c-format
 msgid "worktree and untracked commit have duplicate entries: %s"
 msgstr ""
 "l'arbre de treball i la comissió no seguida tenen entrades duplicades: %s"
 
 #: upload-pack.c:1561
-#, fuzzy
 msgid "expected flush after fetch arguments"
-msgstr "s'esperava una neteja després de les capacitats"
+msgstr "s'esperava una neteja després dels arguments del «fetch»"
 
 #: urlmatch.c:163
 msgid "invalid URL scheme name or missing '://' suffix"
@@ -10540,9 +10524,9 @@ msgid "could not start accept_thread '%s'"
 msgstr "no s'ha pogut començar un fil «accept_thread» «%s»"
 
 #: compat/simple-ipc/ipc-unix-socket.c:882
-#, fuzzy, c-format
+#, c-format
 msgid "could not start worker[0] for '%s'"
-msgstr "no s'ha pogut llegir el fitxer de registre per a «%s»"
+msgstr "no s'ha pogut iniciar el fil[0] per a «%s»"
 
 #: compat/precompose_utf8.c:58 builtin/clone.c:347
 #, c-format
@@ -11290,9 +11274,9 @@ msgid "please use two different terms"
 msgstr "useu dos termes diferents"
 
 #: builtin/bisect--helper.c:210
-#, fuzzy, c-format
+#, c-format
 msgid "We are not bisecting.\n"
-msgstr "No estem bisecant."
+msgstr "No estem bisecant.\n"
 
 #: builtin/bisect--helper.c:218
 #, c-format
