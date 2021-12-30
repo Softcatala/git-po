@@ -6154,7 +6154,7 @@ msgstr "no s'ha pogut obtenir la mida de %s"
 #: pack-bitmap.c:1916
 #, c-format
 msgid "could not find %s in pack %s at offset %<PRIuMAX>"
-msgstr "no s'ha pogut trobar %s com al desplaçament %<PRIuMAX>"
+msgstr "no s'ha pogut trobar %s al paquet %s al desplaçament %<PRIuMAX>"
 
 #: pack-bitmap.c:1952 builtin/rev-list.c:92
 #, c-format
