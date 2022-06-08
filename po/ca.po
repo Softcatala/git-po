@@ -20,6 +20,7 @@
 #   fatal            |  fatal
 #   fetch            |  obtenir
 #   flush            |  buidar / buidatge
+#   graph            |  graf
 #   hint             |  consell
 #   hook             |  lligam
 #   hunk             |  tros
@@ -2474,7 +2475,7 @@ msgstr ""
 #: commit-graph.c:2504
 #, c-format
 msgid "commit-graph has incorrect OID order: %s then %s"
-msgstr "el gràfic de comissions té una ordre OID incorrecta; %s llavors %s"
+msgstr "el graf de comissions té una ordre OID incorrecta; %s llavors %s"
 
 #: commit-graph.c:2514 commit-graph.c:2529
 #, c-format
