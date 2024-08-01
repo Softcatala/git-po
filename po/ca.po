@@ -16962,7 +16962,7 @@ msgid "User-facing repository, command and file interfaces"
 msgstr "Repositori, ordre i interfície de fitxers que veu l'usuari"
 
 msgid "Developer-facing file formats, protocols and other interfaces"
-msgstr "Formats de fitxers, protocols i interfícies que veu el desenvolupador"
+msgstr "Formats de fitxer, protocols i interfícies que veu el desenvolupador"
 
 #, c-format
 msgid "available git commands in '%s'"
@@ -21728,7 +21728,7 @@ msgstr "l'ajudant %s no admet «push-option»"
 
 msgid "remote-helper doesn't support push; refspec needed"
 msgstr ""
-"remot-helper no permet pujar; es necessiten especificacions de referència"
+"remote-helper no permet pujar; es necessiten especificacions de referència"
 
 #, c-format
 msgid "helper %s does not support 'force'"
