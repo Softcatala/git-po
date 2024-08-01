@@ -11515,7 +11515,7 @@ msgid "replaying down to root commit is not supported yet!"
 msgstr "encara no s'admet la reproducció cap avall en una comissió arrel"
 
 msgid "replaying merge commits is not supported yet!"
-msgstr "encara no s'admet la repetició de les comissió de fusió"
+msgstr "encara no s'admet la repetició de les comissions de fusió"
 
 msgid ""
 "git rerere [clear | forget <pathspec>... | diff | status | remaining | gc]"
