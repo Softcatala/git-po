@@ -12401,7 +12401,8 @@ msgid "'%s' is not a stash reference"
 msgstr "«%s» no és una referència «stash»"
 
 msgid "The stash entry is kept in case you need it again."
-msgstr "Es conserva l'entrada «stash» en cas que la necessiteu altra vegada."
+msgstr ""
+"Es conserva l'entrada «stash» en cas que la necessiteu una altra vegada."
 
 msgid "No branch name specified"
 msgstr "Cap nom de branca especificat"
