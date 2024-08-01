@@ -3620,14 +3620,14 @@ msgstr[1] "Recreats %d conflictes de fusió"
 #, c-format
 msgid "Updated %d path from %s"
 msgid_plural "Updated %d paths from %s"
-msgstr[0] "S'ha actualitzat %d camí des de %s"
-msgstr[1] "S'han actualitzat %d camins des de %s"
+msgstr[0] "S'ha actualitzat %d camí a partir de %s"
+msgstr[1] "S'han actualitzat %d camins a partir de %s"
 
 #, c-format
 msgid "Updated %d path from the index"
 msgid_plural "Updated %d paths from the index"
-msgstr[0] "S'ha actualitzat un camí des de l'índex"
-msgstr[1] "S'ha actualitzat %d camins des de l'índex"
+msgstr[0] "S'ha actualitzat %d camí a partir de l'índex"
+msgstr[1] "S'han actualitzat %d camins a partir de l'índex"
 
 #, c-format
 msgid "'%s' cannot be used with updating paths"
