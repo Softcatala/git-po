@@ -275,7 +275,8 @@ msgstr ""
 "n - no facis «stage» d'aquest tros\n"
 "q - surt; no facis «stage» d'aquest tros ni de cap altre restant\n"
 "a - fes «stage» d'aquest tros i de tota la resta de trossos del fitxer\n"
-"d - no facis «stage» d'aquest tros ni de cap altre restant del fitxer\n"
+"d - no facis «stage» d'aquest tros ni de cap altre tros posterior del "
+"fitxer\n"
 
 #, c-format
 msgid "Stash mode change [y,n,q,a,d%s,?]? "
@@ -311,7 +312,8 @@ msgstr ""
 "n - no facis «stash» d'aquest tros\n"
 "q - surt; no facis «stash» d'aquest tros ni de cap altre restant\n"
 "a - fes «stash» d'aquest tros i de tota la resta de trossos del fitxer\n"
-"d - no facis «stash» d'aquest tros ni de cap altre restant del fitxer\n"
+"d - no facis «stash» d'aquest tros ni de cap altre tros posterior del "
+"fitxer\n"
 
 #, c-format
 msgid "Unstage mode change [y,n,q,a,d%s,?]? "
@@ -20723,7 +20725,7 @@ msgid "stored pre-cherry-pick HEAD file '%s' is corrupt"
 msgstr "el fitxer HEAD emmagatzemat abans de fer «cherry pick» «%s» és malmès"
 
 msgid "You seem to have moved HEAD. Not rewinding, check your HEAD!"
-msgstr "Sembla que heu mogut HEAD sense rebobinar, comproveu-ho HEAD"
+msgstr "Sembla que heu mogut HEAD. No es fa el rebobinat, comproveu-ho HEAD"
 
 msgid "no revert in progress"
 msgstr "no hi ha cap reversió en curs"
