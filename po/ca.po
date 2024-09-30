@@ -78,7 +78,7 @@ msgstr ""
 "Project-Id-Version: Git\n"
 "Report-Msgid-Bugs-To: Git Mailing List <git@vger.kernel.org>\n"
 "POT-Creation-Date: 2024-09-30 11:08+0200\n"
-"PO-Revision-Date: 2024-09-30 13:21+0200\n"
+"PO-Revision-Date: 2024-09-30 14:40+0200\n"
 "Last-Translator: Jordi Mas i Hernàndez <jmas@softcatala.org>\n"
 "Language-Team: Catalan\n"
 "Language: ca\n"
@@ -2497,7 +2497,7 @@ msgstr "s'està afegint un repositori incrustat: %s"
 
 #: builtin/add.c:343
 msgid "Use -f if you really want to add them."
-msgstr "\"Useu --f si realment voleu afegir-los."
+msgstr "\"Useu -f si realment voleu afegir-los."
 
 #: builtin/add.c:356
 msgid "adding files failed"
@@ -15581,7 +15581,7 @@ msgstr "mostra només les etiquetes (es pot combinar amb --branches)"
 
 #: builtin/show-ref.c:302
 msgid "only show branches (can be combined with --tags)"
-msgstr "mostra només les branques (es pot combinar amb --etiquetes)"
+msgstr "mostra només les branques (es pot combinar amb --tags)"
 
 #: builtin/show-ref.c:305
 msgid "check for reference existence without resolving"
