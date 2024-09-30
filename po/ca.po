@@ -78,7 +78,7 @@ msgstr ""
 "Project-Id-Version: Git\n"
 "Report-Msgid-Bugs-To: Git Mailing List <git@vger.kernel.org>\n"
 "POT-Creation-Date: 2024-09-30 11:08+0200\n"
-"PO-Revision-Date: 2024-09-30 14:40+0200\n"
+"PO-Revision-Date: 2024-09-30 14:47+0200\n"
 "Last-Translator: Jordi Mas i Hernàndez <jmas@softcatala.org>\n"
 "Language-Team: Catalan\n"
 "Language: ca\n"
@@ -27307,7 +27307,7 @@ msgstr ""
 #: setup.c:669
 #, c-format
 msgid "'%s' already specified as '%s'"
-msgstr "'%s' ja especificat com a '%s'"
+msgstr "«%s» ja especificat com a «%s»"
 
 #: setup.c:853
 #, c-format
