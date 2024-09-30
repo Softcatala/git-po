@@ -12,6 +12,7 @@
 #include "environment.h"
 #include "gettext.h"
 #include "tempfile.h"
+#include "revision.h"
 #include "quote.h"
 #include "diff.h"
 #include "diffcore.h"
@@ -29,6 +30,7 @@
 #include "merge-ll.h"
 #include "string-list.h"
 #include "strvec.h"
+#include "tmp-objdir.h"
 #include "graph.h"
 #include "oid-array.h"
 #include "packfile.h"
@@ -3565,6 +3567,7 @@ static void builtin_diff(const char *name_a,
 		show_submodule_diff_summary(o, one->path ? one->path : two->path,
 				&one->oid, &two->oid,
 				two->dirty_submodule);
+		o->found_changes = 1;
 		return;
 	} else if (o->submodule_format == DIFF_SUBMODULE_INLINE_DIFF &&
 		   (!one->mode || S_ISGITLINK(one->mode)) &&
@@ -3573,6 +3576,7 @@ static void builtin_diff(const char *name_a,
 		show_submodule_inline_diff(o, one->path ? one->path : two->path,
 				&one->oid, &two->oid,
 				two->dirty_submodule);
+		o->found_changes = 1;
 		return;
 	}
 
@@ -3671,6 +3675,7 @@ static void builtin_diff(const char *name_a,
 			emit_diff_symbol(o, DIFF_SYMBOL_BINARY_FILES,
 					 sb.buf, sb.len, 0);
 			strbuf_release(&sb);
+			o->found_changes = 1;
 			goto free_ab_and_return;
 		}
 		if (fill_mmfile(o->repo, &mf1, one) < 0 ||
@@ -4587,6 +4592,9 @@ static void run_diff_cmd(const struct external_diff *pgm,
 		builtin_diff(name, other ? other : name,
 			     one, two, xfrm_msg, must_show_header,
 			     o, complete_rewrite);
+		if (p->status == DIFF_STATUS_COPIED ||
+		    p->status == DIFF_STATUS_RENAMED)
+			o->found_changes = 1;
 	} else {
 		fprintf(o->file, "* Unmerged path %s\n", name);
 		o->found_changes = 1;
@@ -5464,9 +5472,13 @@ static int diff_opt_ignore_regex(const struct option *opt,
 	regex_t *regex;
 
 	BUG_ON_OPT_NEG(unset);
+
 	regex = xmalloc(sizeof(*regex));
-	if (regcomp(regex, arg, REG_EXTENDED | REG_NEWLINE))
+	if (regcomp(regex, arg, REG_EXTENDED | REG_NEWLINE)) {
+		free(regex);
 		return error(_("invalid regex given to -I: '%s'"), arg);
+	}
+
 	ALLOC_GROW(options->ignore_regex, options->ignore_regex_nr + 1,
 		   options->ignore_regex_alloc);
 	options->ignore_regex[options->ignore_regex_nr++] = regex;
@@ -6713,6 +6725,16 @@ void diff_free(struct diff_options *options)
 	if (options->no_free)
 		return;
 
+	if (options->objfind) {
+		oidset_clear(options->objfind);
+		FREE_AND_NULL(options->objfind);
+	}
+
+	for (size_t i = 0; i < options->anchors_nr; i++)
+		free(options->anchors[i]);
+	FREE_AND_NULL(options->anchors);
+	options->anchors_nr = options->anchors_alloc = 0;
+
 	diff_free_file(options);
 	diff_free_ignore_regex(options);
 	clear_pathspec(&options->pathspec);
@@ -7069,9 +7091,15 @@ void diffcore_std(struct diff_options *options)
 	options->found_follow = 0;
 }
 
-int diff_result_code(struct diff_options *opt)
+int diff_result_code(struct rev_info *revs)
 {
+	struct diff_options *opt = &revs->diffopt;
 	int result = 0;
+
+	if (revs->remerge_diff) {
+		tmp_objdir_destroy(revs->remerge_objdir);
+		revs->remerge_objdir = NULL;
+	}
 
 	diff_warn_rename_limit("diff.renameLimit",
 			       opt->needed_rename_limit,
