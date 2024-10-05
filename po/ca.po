@@ -79,7 +79,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: Git Mailing List <git@vger.kernel.org>\n"
 "POT-Creation-Date: 2024-09-30 11:08+0200\n"
 "PO-Revision-Date: 2024-09-30 14:47+0200\n"
-"Last-Translator: Jordi Mas i Hernàndez <jmas@softcatala.org>\n"
+"Last-Translator: Mikel Forcada <mikel.forcada@gmail.com>\n"
 "Language-Team: Catalan\n"
 "Language: ca\n"
 "MIME-Version: 1.0\n"
@@ -6895,7 +6895,7 @@ msgstr "--default= no es pot utilitzar amb --all o --url="
 
 #: builtin/config.c:901
 msgid "--url= cannot be used with --all, --regexp or --value"
-msgstr "--url no es pot usar amb --all, --regexp o --value"
+msgstr "--url= no es pot usar amb --all, --regexp o --value"
 
 #: builtin/config.c:927 builtin/config.c:983
 msgid "Filter"
