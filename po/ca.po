@@ -2128,22 +2128,22 @@ msgstr ""
 #: branch.c
 #, c-format
 msgid "not setting branch '%s' as its own upstream"
-msgstr "no s'està establert la branca «%s» com a la seva pròpia font"
+msgstr "no s'està establint la branca «%s» com a la seva pròpia font"
 
 #: branch.c
 #, c-format
 msgid "branch '%s' set up to track '%s' by rebasing."
-msgstr "la branca «%s» està configurada per a seguir «%s» fent «rebase»."
+msgstr "la branca «%s» s'ha configurat per a seguir «%s» fent «rebase»."
 
 #: branch.c
 #, c-format
 msgid "branch '%s' set up to track '%s'."
-msgstr "la branca «%s» està configurada per a seguir «%s»."
+msgstr "la branca «%s» s'ha configurat per a seguir «%s»."
 
 #: branch.c
 #, c-format
 msgid "branch '%s' set up to track:"
-msgstr "la branca «%s» està configurada per a seguir:"
+msgstr "la branca «%s» s'ha configurat per a seguir:"
 
 #: branch.c
 msgid "unable to write upstream branch configuration"
@@ -2230,7 +2230,7 @@ msgstr "Vegeu `man git check-ref-format`"
 #: branch.c
 #, c-format
 msgid "a branch named '%s' already exists"
-msgstr "ja existeix una branca amb nom «%s»"
+msgstr "ja existeix una branca anomenada «%s»"
 
 #: branch.c
 #, c-format
