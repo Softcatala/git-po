@@ -119,7 +119,7 @@ msgstr ""
 "Project-Id-Version: Git\n"
 "Report-Msgid-Bugs-To: Git Mailing List <git@vger.kernel.org>\n"
 "POT-Creation-Date: 2026-06-21 09:29+0200\n"
-"PO-Revision-Date: 2026-06-24 19:00+0200\n"
+"PO-Revision-Date: 2026-06-30 16:42+0200\n"
 "Last-Translator: Mikel Forcada <mikel.forcada@gmail.com>\n"
 "Language-Team: Catalan\n"
 "Language: ca\n"
@@ -2328,12 +2328,10 @@ msgstr ""
 msgid "not tracking: ambiguous information for ref '%s'"
 msgstr "no s'està seguint: informació ambigua per a la referència «%s»"
 
-#. #-#-#-#-#  branch.c.po  #-#-#-#-#
 #. TRANSLATORS: This is a line listing a remote with duplicate
 #. refspecs in the advice message below. For RTL languages you'll
 #. probably want to swap the "%s" and leading "  " space around.
 #.
-#. #-#-#-#-#  object-name.c.po  #-#-#-#-#
 #. TRANSLATORS: This is line item of ambiguous object output
 #. from describe_ambiguous_object() above. For RTL languages
 #. you'll probably want to swap the "%s" and leading " " space
@@ -3346,9 +3344,9 @@ msgstr ""
 #, c-format
 msgid "status: waiting for '%s' commit, %d '%s' commit known\n"
 msgid_plural "status: waiting for '%s' commit, %d '%s' commits known\n"
-msgstr[0] "estat: s'espera la comissió '%s', es coneix %d comissió '%s'\n"
+msgstr[0] "estat: s'espera la comissió «%s», es coneix %d comissió '%s'\n"
 msgstr[1] ""
-"estat: s'esperen les comissions '%s', es coneixen %d comissions '%s'\n"
+"estat: s'esperen les comissions «%s», es coneixen %d comissions '%s'\n"
 
 #: builtin/bisect.c
 #, c-format
@@ -5857,7 +5855,7 @@ msgstr "No s'ha trobat la branca remota %s al repositori amunt %s"
 #: builtin/clone.c
 #, c-format
 msgid "Remote revision %s not found in upstream %s"
-msgstr "La branca remota %s no es troba al repositori amunt %s"
+msgstr "La revisió remota %s no es troba al repositori amunt %s"
 
 #: builtin/clone.c
 msgid "You appear to have cloned an empty repository."
@@ -7067,8 +7065,7 @@ msgstr "reemplaça l'opció de configuració multivalor amb el valor nou"
 #: builtin/config.c
 msgid "human-readable comment string (# will be prepended as needed)"
 msgstr ""
-"cadena de comentari llegible per humans (s'hi afegirà \n"
-"# al davant si cal)"
+"cadena de comentari llegible per humans (s'hi afegirà # al davant si cal)"
 
 #: builtin/config.c
 msgid "add a new line without altering any existing values"
@@ -9986,7 +9983,6 @@ msgstr "grep: s'ha produït un error en crear fil: %s"
 msgid "invalid number of threads specified (%d) for %s"
 msgstr "s'ha especificat un nombre de fils no vàlid (%d) per a %s"
 
-#. #-#-#-#-#  grep.c.po  #-#-#-#-#
 #. TRANSLATORS: %s is the configuration
 #. variable for tweaking threads, currently
 #. grep.threads
@@ -10611,7 +10607,7 @@ msgstr "no s'ha pogut emplenar l'índex amb l'arbre"
 
 #: builtin/history.c
 msgid "unable to acquire index lock"
-msgstr "no puc adquirir un blocatge d'índex"
+msgstr "no s'ha pogut adquirir un blocatge d'índex"
 
 #: builtin/history.c
 msgid "failed reading temporary index"
@@ -18094,8 +18090,9 @@ msgid ""
 "submodule.%s.gitdir .git/modules/%s'"
 msgstr ""
 "no s'ha pogut establir una configuració per defecte vàlida per a 'submodule."
-"%s.gitdir'. Si us plau, assegureu-vos que està d, per exemple, executant "
-"alguna ordre de l'estil de: 'git config submodule.%s.gitdir .git/modules/%s'"
+"%s.gitdir'. Si us plau, assegureu-vos que està definit, per exemple, "
+"executant alguna ordre de l'estil de: 'git config submodule.%s.gitdir .git/"
+"modules/%s'"
 
 #: builtin/submodule--helper.c
 #, c-format
@@ -19276,7 +19273,7 @@ msgid ""
 "core.splitIndex is set to false; remove or change it, if you really want to "
 "enable split index"
 msgstr ""
-"core.splitIndex s'ha definit com a fals; elimineu-lo o canviar-lo, si "
+"core.splitIndex s'ha definit com a fals; elimineu-lo o canvieu-lo, si "
 "realment voleu habilitar l'índex dividit"
 
 #: builtin/update-index.c
@@ -19304,7 +19301,7 @@ msgid ""
 "core.untrackedCache is set to false; remove or change it, if you really want "
 "to enable the untracked cache"
 msgstr ""
-"core.untrackedCache s'ha definit com a fals; elimineu-lo o canviar-lo, si "
+"core.untrackedCache s'ha definit com a fals; elimineu-lo o canvieu-lo, si "
 "realment voleu habilitar el cau no seguit"
 
 #: builtin/update-index.c
@@ -20881,7 +20878,8 @@ msgstr "el fragment de cerca OID és de mida incorrecta"
 
 #: commit-graph.c
 msgid "commit-graph commit data chunk is wrong size"
-msgstr "el fragment de dades del graf de comissions és de mida incorrecta"
+msgstr ""
+"el fragment de dades de comissió del graf de comissions és de mida incorrecta"
 
 #: commit-graph.c
 msgid "commit-graph generations chunk is wrong size"
@@ -20940,8 +20938,8 @@ msgstr ""
 #: commit-graph.c
 msgid "commit-graph required commit data chunk missing or corrupted"
 msgstr ""
-"manca o està corromput el fragment de dades de publicació requerit pel graf "
-"de comissions"
+"manca o està corromput el fragment de dades de comissió requerit pel graf de "
+"comissions"
 
 #: commit-graph.c
 #, c-format
@@ -24112,7 +24110,7 @@ msgstr "hook.%s.jobs ha de ser un enter, s'ignora: «%s»"
 #: hook.c
 #, c-format
 msgid "hook.%s.jobs must be a positive integer or -1, ignoring: '%s'"
-msgstr "hook.%s.jobs ha de ser un enter positiu o -1; ignoring: «%s»"
+msgstr "hook.%s.jobs ha de ser un enter positiu o -1; s'ignora: «%s»"
 
 #: hook.c
 #, c-format
@@ -25271,7 +25269,7 @@ msgstr "no s'ha pogut establir el permís a «%s»"
 
 #: object-file.c
 msgid "core.fsyncMethod = batch is unsupported on this platform"
-msgstr "core.fsyncMethod = batch no és admès em aquesta plataforma"
+msgstr "core.fsyncMethod = batch no és admès en aquesta plataforma"
 
 #: object-file.c
 msgid "error when closing loose object file"
@@ -26589,7 +26587,7 @@ msgstr "no s'ha trobat el remot garant acceptat «%s»"
 #: promisor-remote.c
 #, c-format
 msgid "promisor remote '%s' advertised invalid filter '%s': %s"
-msgstr "el remot garant «%s» ha anunciat un filtre invàlid «%s»:%s"
+msgstr "el remot garant «%s» ha anunciat un filtre invàlid «%s»: %s"
 
 #: protocol-caps.c
 msgid "object-info: expected flush after arguments"
@@ -27763,8 +27761,8 @@ msgstr "%sinfo/refs no vàlides: és un repositori git?"
 #: remote-curl.c
 msgid "invalid server response; expected service, got flush packet"
 msgstr ""
-"resposta del servidor no és vàlida; el servei esperat, ha rebut un paquet de "
-"buidatge"
+"resposta del servidor no és vàlida; s'esperava servei, s'ha rebut un paquet "
+"de buidatge"
 
 #: remote-curl.c
 #, c-format
@@ -31526,7 +31524,7 @@ msgstr "fitxer .git incorrecte"
 
 #: worktree.c
 msgid ".git file absolute/relative path mismatch"
-msgstr "el camins absoluts/relatius del fitxer .git no coincideixen"
+msgstr "els camins absoluts/relatius del fitxer .git no coincideixen"
 
 #: worktree.c
 msgid "not a valid path"
@@ -31552,7 +31550,7 @@ msgstr "gitdir illegible"
 
 #: worktree.c
 msgid "gitdir absolute/relative path mismatch"
-msgstr "el camins absoluts/relatius del directori git no coincideixen"
+msgstr "els camins absoluts/relatius del directori git no coincideixen"
 
 #: worktree.c
 msgid "gitdir incorrect"
