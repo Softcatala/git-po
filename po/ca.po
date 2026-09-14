@@ -27070,25 +27070,3 @@ msgstr "S'omet %s amb el sufix de còpia de seguretat «%s».\n"
 #, perl-format
 msgid "Do you really want to send %s? [y|N]: "
 msgstr "Esteu segur que voleu enviar %s? [y|N]: "
-
-#~ msgid "historical; does nothing"
-#~ msgstr "històric; no fa res"
-
-#, c-format
-#~ msgid "unknown option --%s"
-#~ msgstr "opció desconeguda --%s"
-
-#~ msgid "failed to perform geometric repack"
-#~ msgstr "no s'ha pogut fer el reempaquetament geomètric"
-
-#, c-format
-#~ msgid "renaming '%s' failed"
-#~ msgstr "el canvi del nom de «%s» ha fallat"
-
-#, c-format
-#~ msgid "not a git repository: %s"
-#~ msgstr "no és un repositori de git: %s"
-
-#, c-format
-#~ msgid "'%s' is nominated for removal.\n"
-#~ msgstr "«%s» està nominat per a ser eliminat.\n"
